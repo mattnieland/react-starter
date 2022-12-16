@@ -7,7 +7,7 @@ on:
 env:
   SENTRY_ORG: mattnieland
   SENTRY_PROJECT: react-starter
-  SENTRY_ENVIRONMENT: dev
+  SENTRY_ENVIRONMENT: prod
 
 jobs:
   deploy:
@@ -44,7 +44,7 @@ jobs:
         run: echo '${{ secrets.DOPPLER_TOKEN }}' | doppler configure set token
 
       - name: Set Doppler Config
-        run: doppler setup --project react-starter --config dev
+        run: doppler setup --project react-starter --config prod
 
       - name: Install Packages
         run: yarn install
@@ -58,4 +58,4 @@ jobs:
           args: deploy --only hosting:react-starter-c4625
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          PROJECT_PATH: ./build
+          PROJECT_PATH: ./
