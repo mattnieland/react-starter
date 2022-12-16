@@ -19,7 +19,7 @@ const AppRoutes: React.FC = () => {
         {isAuthenticated ? (
           <>
             <Route element={<Layout />}>
-              <Route index element={<PageHome />} />            
+              <Route index element={<PageHome />} />                          
               <Route path="*" element={<Page404 />} />
             </Route>
           </>
@@ -27,7 +27,7 @@ const AppRoutes: React.FC = () => {
           <>
             <Route path="/authorizing" element={<PageAuthAuthorize />} />
             <Route path="/auth/login" element={<PageAuthLogin />} />
-            <Route path="/auth/logout" element={<PageAuthLogout />} />           
+            <Route path="/auth/logout" element={<PageAuthLogout />} />                       
             <Route path="*" element={<PageAuthLogin />} />
           </>
         )}

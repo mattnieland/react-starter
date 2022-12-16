@@ -1,5 +1,5 @@
 import { Group, Stack, Title } from "@mantine/core";
-import imgSadPanda from "assets/img/sad-panda.png";
+import img404 from "assets/img/404.png";
 const Page404: React.FC = () => {
   return (
     <>
@@ -21,8 +21,8 @@ const Page404: React.FC = () => {
             </Title>
           </Stack>
           <img
-            alt={imgSadPanda}
-            src={imgSadPanda}
+            alt={img404}
+            src={img404}
             style={{ maxWidth: "200px" }}
           />
         </Group>
