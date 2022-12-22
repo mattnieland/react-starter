@@ -192,10 +192,7 @@ const MyNavLeft: React.FC<IMSNavLeft> = ({ opened,setOpened }: IMSNavLeft) => {
               ))}
             </div>
           )} */}
-        </Navbar.Section>
-        {/* <Navbar.Section>
-          <User />
-        </Navbar.Section> */}
+        </Navbar.Section>                  
       </Navbar>
     </>
   );

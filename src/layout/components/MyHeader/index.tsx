@@ -20,6 +20,7 @@ import imgWhite from "assets/img/name-white.png";
 // import { LanguagePicker } from "components";
 // Local - TypeScript Types
 import { IMyHeader } from "./types";
+import { User } from "./components";
 
 const MyHeader: React.FC<IMyHeader> = ({
   colorScheme,
@@ -146,6 +147,7 @@ const MyHeader: React.FC<IMyHeader> = ({
                   <IconMoonStars size={16} />
                 )}
               </ActionIcon>
+              <User />
             </Group>
           </div>
         </SimpleGrid>

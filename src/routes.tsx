@@ -7,7 +7,6 @@ import Layout from "layout";
 // Pages
 import PageHome from "pages/home";
 import Page404 from "pages/404";
-import PageAuthAuthorize from "pages/auth/authorize";
 import PageAuthLogin from "pages/auth/login";
 import PageAuthLogout from "pages/auth/logout";
 
@@ -24,8 +23,7 @@ const AppRoutes: React.FC = () => {
             </Route>
           </>
        ) : (
-          <>
-            <Route path="/authorizing" element={<PageAuthAuthorize />} />
+          <>            
             <Route path="/auth/login" element={<PageAuthLogin />} />
             <Route path="/auth/logout" element={<PageAuthLogout />} />                       
             <Route path="*" element={<PageAuthLogin />} />
